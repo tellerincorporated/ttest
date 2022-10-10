@@ -35,11 +35,11 @@
 
   // ADD files to ipfs
 
-//   const fileip = {
-//     path: '/upload',
-//     content: './tempdata',
-//      pin : false
-//   }
+  const fileip = {
+    path: '/upload',
+    content: './tempdata',
+     pin : false
+  }
   
   //  const result =  node.add(fileip)
      
