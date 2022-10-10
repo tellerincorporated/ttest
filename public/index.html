@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- <script type="module" src="../app.mjs" defer></script> -->
+
+    </head>
+
+
+    <body >
+
+        <form method="post" action="/multiple" enctype="multipart/form-data">
+            <input type="file" name="file" id="fileup" >
+            <button  id="uploadbtn" type="submit" >Upload</button>
+
+        </form>
+
+        <!-- <script>
+              const  fileup =  document.getElementById('fileup')
+                const uploadbtn = document.getElementById('uploadbtn')
+                const baseUrl =  'http://localhost:8083/multiple'
+
+                uploadbtn.addEventListener('click', getdata)
+
+                async function getdata(e){
+                    e.preventDefault()
+                    
+                   const res = await fetch(baseUrl,
+                    {
+                       method: 'post' 
+                    })
+                    console.log(res)
+                }
+
+               
+
+        </script> -->
+
+
+
+
+    </body>
+</html>
