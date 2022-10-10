@@ -49,22 +49,27 @@ var go = (async function () {
 
     const { node } = await import("./call.mjs");
     const { version } = await import("./call.mjs");
-    // console.log(node);
-    console.log(version.version);
    
-    // ADD files to ipfs
-    const fileip = {
-      path: '/upload',
-      content: './tempdata',
-       pin : false
-    }
-    
-    //  const result =  node.add(fileip)
-    console.log('Added file:', fileip)
+
+    console.log('Version:', version)
+
+    const file = await node.add({
+      path: 'hello.txt',
+      content: 'Hello World 101'
+    })
+  
+    console.log('Added file:', file.path, file.cid.toString())
+  
+    // const data = uint8ArrayConcat(await all(node.cat(file.cid)))
+  
+    // console.log('Added file contents:', uint8ArrayToString(data))
    
 
 
  
  })();
+
+
+
 
 
